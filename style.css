@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+/* Variaáveis */
+:root {
+  --bg: rgb(34, 34, 34);
+  --red: #ff3813;
+}
+
+/* Determinando largura do htHTML e body */
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+/* Corpo */
+body {
+  background-color: var(--bg);
+  color: white;
+  margin: 0 auto;
+  padding: 15px;
+  max-width: 1200px !important;
+  font-family: poppinsregular;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2vh;
+}
+
+.title {
+  flex-direction: column;
+  line-height: 10px;
+  font-family: poppinslight;
+}
+
+li {
+  display: inline-block;
+}
+
+li > a {
+  color: white;
+  font-weight: bolder;
+  margin: 10px;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: 0.3 all;
+}
+
+li > a:hover {
+  color: var(--red);
+}
+
+p {
+  line-height: 20px;
+  max-width: 500px;
+  font-family: poppinslight
+}
+
+strong {
+  color: #fff0ed;
+  font-weight: bolder;
+}
+
+#last-button {
+  padding: 10px;
+  border: 2px solid var(--red);
+  border-radius: 10px;
+}
+
+#last-button:hover {
+  color: white;
+  background-color: var(--red);
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+h2 {
+  font-size: 3.5em;
+  line-height: 10px;
+}
+
+span {
+  color: var(--red);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+input {
+  height: 20px;
+  margin-top: 10px;
+  border: none;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 10px;
+  transition: 0.2s all;
+}
+
+input:hover {
+  transform: scale(1.03);
+}
+
+input:focus {
+  outline: 1.5px solid var(--red);
+  transform: scale(1.05);
+}
+
+
+.img-password {
+  margin-left: 15%;
+}
+
+div.img-password > img {
+  width: 20vw;
+}
