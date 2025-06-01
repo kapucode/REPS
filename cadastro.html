@@ -32,10 +32,10 @@
         <p><strong>Transforme seu corpo. Domine sua mente. <br />
         O site definitivo para quem leva o treino a sério.</strong> <br />
         O melhor conteúdo de calistenia e preparação física do mundo – exercícios, rotinas, guias e estratégias pra te transformar em uma máquina.</p>
-        <form action="" method="get" accept-charset="utf-8">
-          <input type="text" name="nome" id="nome" placeholder="Nome"/>
-          <input type="email" name="email" id="email" placeholder="E-mail"/>
-          <input type="password" name="senha" id="senha" placeholder="Senha"/>
+        <form action="" method="post" accept-charset="utf-8">
+          <input type="text" name="nome" id="nome" placeholder="Nome (mínimo 3 caracteres)" minlength="3" maxlength="25" required/>
+          <input type="email" name="email" id="email" placeholder="E-mail" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required/>
+          <input type="password" name="senha" id="senha" placeholder="Senha (mínimo 8 caracteres)" minlength="8" maxlength="64" required autocomplete="new-password"/>
           <input type="submit" name="enviar" id="enviar" value="Enviar >" />
         </form>
       </div>
@@ -43,5 +43,7 @@
         <img src="imagens/password.svg" alt="" />
       </div>
     </main>
+    
+    <script src="show-hide.js" type="text/javascript" charset="utf-8"></script>
   </body>
 </html>
